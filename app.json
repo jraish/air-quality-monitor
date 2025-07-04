@@ -13,7 +13,8 @@
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.jraish.AirQualityMonitor"
     },
     "android": {
       "adaptiveIcon": {
@@ -21,10 +22,24 @@
         "backgroundColor": "#ffffff"
       },
       "edgeToEdgeEnabled": true,
-      "package": "com.jraish.AirQualityMonitor"
+      "package": "com.jraish.AirQualityMonitor",
+      "permissions": [
+        "android.permission.BLUETOOTH",
+        "android.permission.BLUETOOTH_ADMIN",
+        "android.permission.BLUETOOTH_CONNECT"
+      ]
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      "react-native-ble-plx"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "36d2888e-0ef7-41e9-a017-4277d557ed4b"
+      }
+    },
+    "owner": "jraish"
   }
 }
